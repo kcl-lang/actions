@@ -5,9 +5,22 @@ inputs:
     description: 'KCL version'
     required: false
     default: 'latest'
+  subcommand:  
+    description: 'kcl subcommand'
+    required: true 
+    default: 'run'
+  arguments:  
+    description: 'KCL arguments'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}
+    - ${{ inputs.subcommand }}
+    - ${{ inputs.workDir}}
+    - ${{ inputs.filenames }}
 branding:
   icon: 'check-circle'  
   color: 'green'
