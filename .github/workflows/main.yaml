@@ -5,7 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to run action
     steps:
-      - name: Run action
-        id: action
-        uses: kcl-lang/actions@main
-        run: kcl -V
+      - uses: kcl-lang/actions@main
+      - run: kcl -V
