@@ -1,7 +1,7 @@
 #!/bin/sh -l
 set -e
 
-APP_PATH="/usr/local/kclvm/bin/kclvm_cli"
+APP_PATH="/kclvm/bin/kclvm_cli"
 
 echo "kcl cli version:"
 $APP_PATH version
