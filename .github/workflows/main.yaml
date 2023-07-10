@@ -5,5 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to run action
     steps:
+      - uses: actions/checkout@v3
       - uses: kcl-lang/actions@main
-      - run: kcl -V
+        with:
+          subcommand: version
+      - uses: kcl-lang/actions@main
+        with:
+          subcommand: run
+          arguments: ./examples/kubernetes.k

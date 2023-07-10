@@ -3,15 +3,17 @@ set -e
 
 APP_PATH="/kclvm/bin/kclvm_cli"
 
-echo "kcl cli version:"
+echo "kcl component version is"
 $APP_PATH version
 
 version=$1
 subcommand=$2
 arguments=$3
 
-params=$subcommand
-if [ -n "$arguments" ]; then
-    params="$params $arguments"
+if [ -n "$subcommand" ]; then
+    params=$subcommand
+    if [ -n "$arguments" ]; then
+        params="$params $arguments"
+    fi
+    $APP_PATH $params
 fi
-$APP_PATH $params

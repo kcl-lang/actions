@@ -8,7 +8,7 @@ inputs:
   subcommand:  
     description: 'kcl subcommand'
     required: true 
-    default: 'run'
+    default: ''
   arguments:  
     description: 'KCL arguments'
     required: false
