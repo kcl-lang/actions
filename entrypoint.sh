@@ -3,7 +3,7 @@ set -e
 
 APP_PATH="/kclvm/bin/kclvm_cli"
 
-echo "kcl component version is"
+echo "kcl component version is as follows:"
 $APP_PATH version
 
 version=$1

@@ -19,8 +19,7 @@ runs:
   args:
     - ${{ inputs.version }}
     - ${{ inputs.subcommand }}
-    - ${{ inputs.workDir}}
-    - ${{ inputs.filenames }}
+    - ${{ inputs.arguments }}
 branding:
   icon: 'check-circle'  
   color: 'green'
