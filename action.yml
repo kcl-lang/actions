@@ -1,6 +1,10 @@
 name: 'KCL Action'
 description: 'KCL Action'
 inputs:
+  version:  
+    description: 'KCL version'
+    required: false
+    default: 'latest'
 runs:
   using: 'docker'
   image: 'Dockerfile'
