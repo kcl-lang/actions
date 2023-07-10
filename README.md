@@ -1,2 +1,1 @@
-# actions
-KCL Github Actions
+# KCL Github Actions
