@@ -1,7 +1,7 @@
 #!/bin/sh -l
 set -e
 
-APP_PATH="/kclvm/bin/kclvm_cli"
+APP_PATH="/usr/local/bin/kcl"
 
 echo "kcl component version is as follows:"
 $APP_PATH version
